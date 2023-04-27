@@ -66,6 +66,8 @@ button {
 
 .header {
   border-bottom: 1px solid var(--cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -179,6 +181,7 @@ button {
   height: 56px;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   display: block;
 
   margin-left: auto;
@@ -271,6 +274,8 @@ button {
   --item: 4;
   width: calc((100% - (var(--indent) * (var(--item) - 1))) / var(--item));
   background-color: var(--white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .descr {
@@ -281,6 +286,11 @@ button {
 .card-item {
   margin-right: 0;
   margin-bottom: 0;
+}
+.card-item:hover,
+.card-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-descr {
@@ -333,6 +343,8 @@ button {
 .button-filter:hover,
 .button-filter:focus {
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white);
   background-color: var(--ocean);
 }
