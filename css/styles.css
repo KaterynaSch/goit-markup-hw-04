@@ -60,8 +60,8 @@ button {
   padding: 0 15px;
   margin: 0 auto;
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 .header {
@@ -150,19 +150,21 @@ button {
 .section {
   padding-bottom: 120px;
 }
-/* linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), */
+
 .hero {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url("../images/people-office\ 1.jpg");
-  background-size: cover;
-  background-position: center;
   max-width: 1400px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office.jpg");
   background-color: var(--grey);
   padding: 188px 0;
 }
@@ -227,7 +229,7 @@ button {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
@@ -299,7 +301,7 @@ button {
 }
 
 .team-descr {
-  padding: 32px 16px;
+  padding: 32px 0px;
   text-align: center;
 }
 
@@ -308,8 +310,12 @@ button {
   margin-bottom: 0;
 }
 
-.card-item:hover,
-.card-item:focus {
+.card-link {
+  display: block;
+}
+
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -345,16 +351,21 @@ button {
   background-color: var(--iris);
 }
 
-.icon,
-.icon-footer {
+.icon {
   fill: currentColor;
 }
 
-.social-networks-link:hover,
+.social-networks-link:hover {
+  color: var(--ocean);
+}
+
 .social-networks-link:focus {
   background-color: var(--ocean);
 }
 
+.customers-section {
+  padding-top: 120px;
+}
 .customers-list {
   display: flex;
   align-items: center;
@@ -384,11 +395,8 @@ button {
 }
 .customers-link:hover,
 .customers-link:focus {
+  color: var(--ocean);
   border-color: var(--ocean);
-}
-.customers-icon:hover,
-.customers-icon:focus {
-  fill: var(--ocean);
 }
 
 .footer {
@@ -399,7 +407,9 @@ button {
   display: flex;
   align-items: baseline;
 }
-
+.footer-left {
+  margin-right: 120px;
+}
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -408,10 +418,6 @@ button {
 .footer-text {
   width: 264px;
   color: var(--cloud);
-}
-
-.footer-social {
-  margin-left: 120px;
 }
 
 .social-media-list {
@@ -438,7 +444,9 @@ button {
 .social-media-link:focus {
   background-color: var(--green);
 }
-
+.icon-footer {
+  fill: var(--cloud);
+}
 .filter-list {
   display: flex;
   align-items: center;
