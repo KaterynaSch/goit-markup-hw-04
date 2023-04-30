@@ -60,8 +60,8 @@ button {
   padding: 0 15px;
   margin: 0 auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 .header {
@@ -152,7 +152,7 @@ button {
 }
 
 .hero {
-  max-width: 1400px;
+  max-width: 1440px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -355,10 +355,7 @@ button {
   fill: currentColor;
 }
 
-.social-networks-link:hover {
-  color: var(--ocean);
-}
-
+.social-networks-link:hover,
 .social-networks-link:focus {
   background-color: var(--ocean);
 }
